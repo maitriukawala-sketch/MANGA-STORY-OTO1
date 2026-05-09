@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>320 Prompts For Addictive Long-Form Manga Romance Chapters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --surface-color: #ffffff;
+            --surface-color-hover: #f3f4f6;
+            --accent-primary: #9d174d; /* deep pink/crimson */
+            --accent-secondary: #5b21b6; /* deep purple */
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --border-color: rgba(0, 0, 0, 0.1);
+            --font-sans: 'Inter', sans-serif;
+            --font-serif: 'Playfair Display', serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            background-image: 
+                radial-gradient(circle at 15% 50%, rgba(157, 23, 77, 0.03), transparent 25%),
+                radial-gradient(circle at 85% 30%, rgba(91, 33, 182, 0.03), transparent 25%);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            background: linear-gradient(135deg, #111827, #4b5563);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .text-center { text-align: center; }
+
+        /* Badges */
+        .badges-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .badge svg {
+            width: 16px;
+            height: 16px;
+            fill: var(--accent-primary);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+            color: white;
+            padding: 18px 40px;
+            border-radius: 8px;
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(157, 23, 77, 0.3);
+            font-family: var(--font-sans);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(157, 23, 77, 0.5);
+            background: linear-gradient(135deg, #be185d, #6d28d9);
+        }
+
+        .btn span {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 400;
+            opacity: 0.8;
+            margin-top: 4px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 100px 0 60px;
+            position: relative;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-sans);
+            font-size: 1.25rem;
+            color: var(--accent-primary);
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-lead {
+            font-size: 1.25rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-align: center;
+            color: var(--text-muted);
+        }
+
+        .mockup-container {
+            margin: 50px auto;
+            max-width: 600px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            background: var(--surface-color);
+            padding: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mockup-container::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent-primary), transparent);
+        }
+
+        .mockup-image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px dashed var(--border-color);
+            color: var(--text-muted);
+            font-family: var(--font-serif);
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Cards & Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+        }
+
+        .card {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            border-color: rgba(157, 23, 77, 0.3);
+            background: var(--surface-color-hover);
+        }
+
+        .card h3 {
+            font-family: var(--font-sans);
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card h3 svg {
+            width: 24px;
+            height: 24px;
+            color: var(--accent-primary);
+        }
+
+        .card p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        /* List styling */
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            font-size: 1.125rem;
+            color: var(--text-main);
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        /* Tags for "Inside the Collection" */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: rgba(0,0,0,0.03);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 1rem;
+            color: var(--text-main);
+            transition: all 0.3s ease;
+        }
+        
+        .tag:hover {
+            border-color: var(--accent-primary);
+            color: #fff;
+            background: rgba(157, 23, 77, 0.1);
+        }
+
+        /* Demo Prompt Section */
+        .demo-section {
+            background: linear-gradient(180deg, rgba(18,18,18,0) 0%, rgba(18,18,18,1) 100%);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .demo-box {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent-primary);
+            border-radius: 8px;
+            padding: 30px;
+            position: relative;
+            overflow-x: auto;
+        }
+        
+        .demo-box::before {
+            content: 'DEMO PROMPT';
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #ffffff;
+            padding: 0 10px;
+            font-size: 0.75rem;
+            color: var(--accent-primary);
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .demo-box pre {
+            font-family: var(--font-sans);
+            white-space: pre-wrap;
+            color: var(--text-main);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .demo-box .highlight {
+            color: #fca5a5;
+        }
+
+        /* Trust Section */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: var(--surface-color);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .trust-item svg {
+            width: 24px; height: 24px;
+            flex-shrink: 0;
+            color: var(--accent-secondary);
+        }
+
+        /* Testimonials */
+        .testimonial {
+            background: var(--surface-color);
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            font-style: italic;
+            position: relative;
+        }
+        
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 4rem;
+            color: rgba(255,255,255,0.05);
+            font-family: var(--font-serif);
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            font-style: normal;
+        }
+
+        .author-avatar {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: #333;
+        }
+
+        /* FAQ */
+        .faq-item {
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+        }
+
+        .faq-question {
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: 1.125rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Sticky CTA */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid var(--border-color);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            z-index: 1000;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .sticky-cta.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-cta p {
+            margin: 0;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .sticky-cta .btn {
+            padding: 10px 25px;
+            font-size: 1rem;
+        }
+
+        /* Utility */
+        .highlight-text {
+            color: var(--accent-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container text-center">
+            <div class="badges-wrapper">
+                <div class="badge">
+                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    OTO 1 Exclusive Upgrade
+                </div>
+                <div class="badge">
+                    <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    Instant Download
+                </div>
+            </div>
+
+            <p class="hero-subtitle">The "Lazy Writer's" Secret To Instant Success</p>
+            <h1>Generate Massive, Multi-Chapter Romance Novels <span style="font-style: italic; color: var(--accent-primary);">With 1 Click.</span></h1>
+            
+            <p class="hero-lead">Stop settling for short, robotic AI summaries. Unlock 320 "God-Mode" prompts engineered to force ChatGPT into writing massive, highly-addictive, multi-chapter romance arcs that keep readers begging for more.</p>
+
+            <div class="mockup-container" style="padding: 10px;">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/Main%20mockup.png" alt="Main Product Mockup" style="width: 100%; height: auto; border-radius: 8px; display: block;">
+            </div>
+
+            <a href="#checkout" class="btn">
+                UPGRADE MY ORDER NOW - ONLY $17
+                <span>Instant Access • One-Time Payment</span>
+            </a>
+            <div style="margin-top: 15px;">
+                <a href="#nothanks" style="color: var(--text-muted); font-size: 0.9rem; text-decoration: underline;">No thanks, I don't want to create addictive romance stories.</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY PEOPLE LOVE THESE PROMPTS -->
+    <section>
+        <div class="container">
+            <h2>Why Smart Creators <span class="highlight-text">Exploit</span> These Prompts</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg> Massive Multi-Chapter Output</h3>
+                    <p>Never write a short scene again. These exact prompts force the AI to pump out sweeping, continuous multi-chapter arcs without breaking character or rushing.</p>
+                </div>
+                <div class="card">
+                    <h3><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path></svg> Zero Effort Required</h3>
+                    <p>Literally copy, paste, and watch as an entire addictive novel writes itself in front of your eyes. No outline, no drafting, no brain power needed.</p>
+                </div>
+                <div class="card">
+                    <h3><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg> Unfair Reader Manipulation</h3>
+                    <p>Engineered with psychological triggers that create intense emotional attachment, forcing readers to binge-read every single chapter you generate.</p>
+                </div>
+                <div class="card">
+                    <h3><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg> Endless Cliffhangers</h3>
+                    <p>The AI is strictly commanded to pace the story perfectly, leaving agonizingly romantic cliffhangers at the end of every massive chapter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT MAKES THIS DIFFERENT -->
+    <section style="background: rgba(0,0,0,0.02); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <div class="text-center" style="max-width: 700px; margin: 0 auto; margin-bottom: 40px;">
+                <h2>The Ultimate <span class="highlight-text">"Cheat Code"</span> For Long-Form Storytelling</h2>
+                <p style="font-size: 1.2rem; color: var(--text-main);">Ordinary prompts give you 3 paragraphs. These prompts command the AI to write <em>entire binge-worthy sagas</em>.</p>
+            </div>
+            
+            <div class="grid-2" style="align-items: center; gap: 40px;">
+                <div>
+                    <ul class="feature-list">
+                        <li><strong>Forces Multi-Chapter Length:</strong> Completely shatters the AI's "short summary" limit, generating endless, detailed chapters one after another.</li>
+                        <li><strong>The "Done-For-You" Plot:</strong> We've already engineered the plot twists, the betrayal, and the romance. Just paste it in and take the credit.</li>
+                        <li><strong>Psychological Hooking:</strong> Uses proven romance tropes that manipulate reader emotions and guarantee they subscribe to your next chapter.</li>
+                        <li><strong>Instant Novel Creation:</strong> Stack these 320 prompts together to easily generate an entire 80,000-word book over a single weekend.</li>
+                    </ul>
+                </div>
+                <div class="card" style="background: linear-gradient(145deg, #ffffff, #f9fafb); border-color: var(--accent-primary);">
+                    <h3 style="color: var(--accent-primary); border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom: 15px; margin-bottom: 15px;">Steal The "Viral" Formula</h3>
+                    <p>We've reverse-engineered the exact pacing, tension, and dramatic reveals used by top-earning Romance Manhwa and Webnovels. Now, you hold the exact blueprint to replicate their viral success in mere seconds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEMO PROMPT -->
+    <section class="demo-section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 40px;">
+                <h2>Look at the <span class="highlight-text">Depth</span> You Get</h2>
+                <p>This is just ONE of the 320 prompts included. Copy and paste this into ChatGPT right now to see the magic.</p>
+            </div>
+            
+            <div class="demo-box">
+<pre>Act as a premium emotional thriller romance novelist and cinematic storyteller. Write a deeply emotional bodyguard romance centered on a disciplined protector completely abandoning professional boundaries after the woman he guards becomes emotionally essential to him.
+
+<span class="highlight">IMPORTANT:</span>
+- 2200–2800 words
+- Strong emotional desperation and forbidden intimacy
+- Expand protective obsession and emotional surrender fully
+
+<span class="highlight">---</span>
+
+The story is set inside a world of private security empires, corrupt political elites, and hidden assassination networks.
+
+The male lead, Soren Vale, is known professionally for never becoming emotionally involved with clients.
+
+The female lead, Elena Ashford, is a powerful young heiress secretly targeted after uncovering dangerous corporate secrets.
+
+<span class="highlight">At first:</span>
+- Soren keeps emotional distance strictly
+- Elena feels emotionally frustrated by his coldness
+- attraction slowly intensifies through repeated danger
+
+<span class="highlight">But gradually:</span>
+- emotional dependence develops during constant proximity
+- Soren becomes obsessively protective
+- intimacy forms through emotional vulnerability during survival situations
+
+<span class="highlight">The sensual tension develops through:</span>
+- desperate closeness during attacks
+- emotionally charged arguments turning intimate
+- restrained touch carrying overwhelming emotional meaning
+
+<span class="highlight">MID-STORY TWIST:</span>
+Soren illegally uses his entire security network to protect Elena after realizing official systems have already been compromised against her.
+
+<span class="highlight">---</span>
+
+<span class="highlight">STYLE:</span>
+- Focus on forbidden protection and emotional surrender
+- Tone: cinematic, emotionally epic, sensual
+
+<span class="highlight">---</span>
+
+Also generate cinematic manga scene prompts for key moments.</pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHAT YOU CAN CREATE -->
+    <section>
+        <div class="container text-center">
+            <h2>What Will You Create?</h2>
+            <p style="margin-bottom: 40px;">Fuel your next big project with endless high-quality narrative generation.</p>
+            
+            <div class="grid-3">
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">📖 Viral Webnovels</h3>
+                    <p style="font-size: 0.95rem;">Instantly pump out daily 2,000+ word chapters for Wattpad or Patreon and watch your reader count explode.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">🎨 Manga Scripts</h3>
+                    <p style="font-size: 0.95rem;">Skip the hard work. Let AI map out the exact panel-by-panel dialogue and action for your next comic.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">🎭 Character AI Bots</h3>
+                    <p style="font-size: 0.95rem;">Feed these prompts into roleplay bots to create scarily realistic, long-form conversational arcs.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">📚 Full-Length Novels</h3>
+                    <p style="font-size: 0.95rem;">Why write? Chain these prompts together to ghostwrite a massive 40-chapter novel in one afternoon.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">🎮 Visual Novels</h3>
+                    <p style="font-size: 0.95rem;">Easily generate branching, multi-path storylines with intense romantic progression without getting stuck.</p>
+                </div>
+                <div class="card" style="text-align: center; padding: 25px 15px;">
+                    <h3 style="justify-content: center; font-size: 1.15rem;">✨ Paid Subscriptions</h3>
+                    <p style="font-size: 0.95rem;">Keep your audience hooked on Patreon or Substack with an endless supply of addictive cliffhanger content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section>
+        <div class="container text-center">
+            <h2>Stunning Visuals You Can Generate</h2>
+            <p style="margin-bottom: 40px;">Combine these prompts with visual generation AI to bring your cinematic scenes to life.</p>
+            
+            <div class="grid-3" style="gap: 20px;">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/1.png" alt="Generated Manga Example 1" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/2.png" alt="Generated Manga Example 2" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/3.png" alt="Generated Manga Example 3" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/4.png" alt="Generated Manga Example 4" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/5.png" alt="Generated Manga Example 5" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+                <img src="https://raw.githubusercontent.com/maitriukawala-sketch/MANGA-STORY-OTO1/main/6.png" alt="Generated Manga Example 6" style="width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.02)'" onmouseout="this.style.transform='scale(1)'">
+            </div>
+        </div>
+    </section>
+
+    <!-- INSIDE THE COLLECTION -->
+    <section style="background: rgba(0,0,0,0.02); border-top: 1px solid var(--border-color);">
+        <div class="container text-center">
+            <div class="badges-wrapper">
+                <div class="badge">
+                    <svg viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg>
+                    320 Premium Prompts Included
+                </div>
+            </div>
+            <h2>Inside The <span class="highlight-text">Collection</span></h2>
+            <p style="margin-bottom: 40px;">Meticulously crafted prompts covering every addictive trope and sub-genre.</p>
+            
+            <div class="tags">
+                <span class="tag">Dark Romance</span>
+                <span class="tag">Gothic Fantasy</span>
+                <span class="tag">Emotional Slow Burn</span>
+                <span class="tag">Forbidden Love</span>
+                <span class="tag">Supernatural Intimacy</span>
+                <span class="tag">Apocalypse Survival</span>
+                <span class="tag">Rival Gang Romance</span>
+                <span class="tag">Dreamworld Romance</span>
+                <span class="tag">Cursed Marriage</span>
+                <span class="tag">Memory Loss Tragedy</span>
+                <span class="tag">Ocean Fantasy</span>
+                <span class="tag">Psychological Obsession</span>
+                <span class="tag">Mature Adult Intimacy</span>
+                <span class="tag">Cozy Emotional Healing</span>
+                <span class="tag">Cinematic Tension</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">Simple. Reliable. <span style="font-style: italic;">Powerful.</span></h2>
+            
+            <div class="trust-grid" style="margin-top: 40px;">
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h4 style="margin-bottom: 5px; color: var(--text-main);">Zero Writing Required</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Can't write? Hate outlining? Good. Just copy, paste, and let the AI do 100% of the heavy lifting.</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <div>
+                        <h4 style="margin-bottom: 5px; color: var(--text-main);">Instant Long-Form Results</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Stop begging ChatGPT to "make it longer." These prompts legally force the AI to output huge, unbroken chapters.</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <div>
+                        <h4 style="margin-bottom: 5px; color: var(--text-main);">Total Market Domination</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">While others struggle with writer's block, you will be churning out 10x more high-converting content effortlessly.</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    <div>
+                        <h4 style="margin-bottom: 5px; color: var(--text-main);">Infinite Sagas</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0;">Change the character names, press generate, and instantly own a completely brand-new, multi-chapter romance epic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container" style="max-width: 700px;">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            
+            <div style="margin-top: 30px;">
+                <div class="faq-item">
+                    <div class="faq-question">Do I need a paid ChatGPT account? <span>+</span></div>
+                    <div class="faq-answer" style="display: none; padding-top: 10px;">No, these prompts work excellently with free versions of ChatGPT and Claude, though premium models (like GPT-4 or Claude 3 Opus) will yield the absolute highest quality narrative prose.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Are the stories NSFW? <span>+</span></div>
+                    <div class="faq-answer" style="display: none; padding-top: 10px;">The prompts are designed for intense emotional intimacy, slow-burn tension, and mature themes. Depending on the AI model you use, you can push the boundaries to be as clean or as spicy as you prefer.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How are the prompts delivered? <span>+</span></div>
+                    <div class="faq-answer" style="display: none; padding-top: 10px;">You will receive instant access to a beautifully formatted PDF and a Notion template containing all 320 prompts immediately after purchase.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is there a guarantee? <span>+</span></div>
+                    <div class="faq-answer" style="display: none; padding-top: 10px;">Yes! We offer a 7-day money-back guarantee. If you don't feel these prompts elevate your storytelling, just let us know.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="background: linear-gradient(180deg, var(--bg-color) 0%, rgba(157, 23, 77, 0.05) 100%); padding-bottom: 120px; border-top: 1px solid var(--border-color);">
+        <div class="container text-center">
+            <h2>Claim Your "Cheat Code" To <br><span style="font-style: italic; font-weight: 400; color: var(--text-muted);">Effortless Sagas.</span></h2>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 40px; color: var(--text-main);">Skip the hard work. Upgrade your order right now to unlock 320 multi-chapter prompts and dominate the romance market before your competitors do.</p>
+            
+            <a href="#checkout" class="btn" style="padding: 20px 50px; font-size: 1.5rem;">
+                YES! ADD TO MY ORDER ($17)
+                <span>Instant Digital Access</span>
+            </a>
+            
+            <div class="badges-wrapper" style="margin-top: 30px;">
+                <div class="badge" style="border: none; background: transparent;"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Secure One-Time Payment</div>
+                <div class="badge" style="border: none; background: transparent;"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Instant Access</div>
+            </div>
+            
+            <p style="margin-top: 20px; font-size: 0.9rem; text-decoration: underline; cursor: pointer; color: var(--text-muted);">No thanks, I will pass on this exclusive upgrade.</p>
+        </div>
+    </section>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+        <p>Unlock 320 Premium Romance Prompts!</p>
+        <a href="#checkout" class="btn">Upgrade For $17</a>
+    </div>
+
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                const icon = item.querySelector('span');
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.textContent = '+';
+                } else {
+                    answer.style.display = 'block';
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // Sticky CTA Logic
+        window.addEventListener('scroll', () => {
+            const stickyCta = document.getElementById('sticky-cta');
+            if (window.scrollY > 600) {
+                stickyCta.classList.add('visible');
+            } else {
+                stickyCta.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>
